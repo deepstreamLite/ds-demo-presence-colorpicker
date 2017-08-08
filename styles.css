@@ -1,0 +1,46 @@
+body {
+ margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+h1.first {
+  padding-top: 70px;
+}
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 30px;
+  margin: 0;
+}
+
+
+#color-picker {
+  padding: 30px;
+  /* width: 30%;
+  display: inline-block; */
+  box-sizing: border-box;
+  text-align: center;
+}
+.color {
+  height: 25px;
+  width: 25px;
+  margin: 2px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.color-selected {
+  border: 5px solid white;
+}
+.chart {
+  /* display: inline-block;
+  width: 67%; */
+  box-sizing: border-box;
+  text-align: center;
+  margin: 20px;
+  height: 200px;
+}
+canvas {
+   height: 100%;
+}
