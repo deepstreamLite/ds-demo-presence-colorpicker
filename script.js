@@ -1,10 +1,10 @@
 (function() {
-  var client = deepstream('wss://154.dsh.cloud?apiKey=e8d4940f-501f-4807-9b72-fd8a271332c9', { recordReadAckTimeout: 2000});
+  var client = deepstream('wss://154.dsh.cloud?apiKey=a80c5270-7ce7-4f29-831b-98b1d53d23b8');
   var chart = null;
   var usersRecords = {};
   var userId = null;
 
-  function render (update) {
+  function render () {
     if(!chart) {
       chart = new Chart(
         document.getElementById("myChart").getContext("2d"),
@@ -50,7 +50,7 @@
     displayFirstUser(false)
   }
 
-  function userLoggedIn(id) {
+  function userLoggedIn (id) {
     usersRecords[id] = client.record.getRecord('users/' + id);
     usersRecords[id].subscribe('color', render, true);
     usersRecords[id].on('delete', function () {
@@ -64,10 +64,9 @@
   }
 
   function initializeApplication(data) {
-    window.initialiseColorPicker('#color-picker', onColorSelected);
-
     userId = data.id;
-   // onColorSelected(userId);
+
+    initialiseColorPicker('#color-picker', onColorSelected);
 
     client.presence.getAll(function (ids) {
       // requires comment why

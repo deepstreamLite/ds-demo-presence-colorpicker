@@ -5,6 +5,7 @@ body {
 
 h1.first {
   padding-top: 70px;
+  display: none;
 }
 h1 {
   text-align: center;
@@ -12,12 +13,8 @@ h1 {
   font-size: 30px;
   margin: 0;
 }
-
-
 #color-picker {
   padding: 30px;
-  /* width: 30%;
-  display: inline-block; */
   box-sizing: border-box;
   text-align: center;
 }
@@ -34,8 +31,6 @@ h1 {
   border: 5px solid white;
 }
 .chart {
-  /* display: inline-block;
-  width: 67%; */
   box-sizing: border-box;
   text-align: center;
   margin: 20px;
@@ -43,4 +38,5 @@ h1 {
 }
 canvas {
    height: 100%;
+   margin: 0 auto;
 }
