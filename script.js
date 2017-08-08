@@ -37,7 +37,6 @@
   }
 
   function displayFirstUser (isNoUsers) {
-    $('#myChart').toggle(!isNoUsers)
     $('.first').toggle(isNoUsers)
   }
 
