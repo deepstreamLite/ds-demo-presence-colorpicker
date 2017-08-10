@@ -1,5 +1,5 @@
 (function() {
-  var client = deepstream('wss://154.dsh.cloud?apiKey=a80c5270-7ce7-4f29-831b-98b1d53d23b8');
+  var client = deepstream('wss://154.deepstreamhub.com?apiKey=97a397bd-ccd2-498f-a520-aacc9f67373c');
   var chart = null;
   var usersRecords = {};
   var userId = null;
